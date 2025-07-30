@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id='contact' className="py-16 px-4 bg-background">
+    <section id='contact' className="py-16 px-4 bg-sky-50 text-white">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
         {/* Contact Info */}
@@ -28,11 +28,11 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <form className="bg-muted p-6 rounded-xl space-y-4 shadow">
+        <form className="bg-white border border-indigo-200 p-6 rounded-xl space-y-4 shadow">
           <Input type="text" placeholder="Your Name" required />
           <Input type="email" placeholder="Your Email" required />
           <Textarea placeholder="Your Message" rows={5} required />
-          <Button type="submit" className="w-full">Send Message</Button>
+          <Button type="submit" className="w-1/2 border text-center bg-indigo-600 text-white hover:bg-indigo-700 hover:cursor-pointer">Send Message</Button>
         </form>
       </div>
     </section>

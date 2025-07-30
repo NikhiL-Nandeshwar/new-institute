@@ -29,7 +29,7 @@ const courses = [
 
 export default function Courses() {
   return (
-    <section id='courses' className="py-16 px-4 bg-muted">
+    <section id='courses' className="py-16 px-4 bg-sky-50 text-sky-700">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold text-foreground">Our Programs</h2>
         <p className="text-muted-foreground mt-2">
@@ -41,7 +41,7 @@ export default function Courses() {
         {courses.map((course, index) => (
           <Card key={index} className="hover:shadow-md transition duration-300">
             <CardHeader>
-              <CardTitle className="text-xl text-primary">{course.title}</CardTitle>
+              <CardTitle className="text-xl text-indigo-700">{course.title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">{course.description}</p>
