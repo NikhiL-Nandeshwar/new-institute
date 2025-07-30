@@ -28,7 +28,7 @@ const Hero = () => {
                         Apply Now
                     </a>
                     <a
-                        href="/courses"
+                        href="#courses"
                         className="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-xl text-sm font-medium hover:bg-indigo-100 transition"
                     >
                         View Courses

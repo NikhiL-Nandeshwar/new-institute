@@ -5,34 +5,43 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id='contact' className="py-16 px-4 bg-sky-50 text-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-
+    <section id="contact" className="py-20 px-4 bg-sky-50">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Contact Info */}
         <div>
-          <h2 className="text-3xl font-bold mb-4 text-foreground">Get in Touch</h2>
-          <p className="text-muted-foreground mb-6">
-            We&apos;d love to hear from you. Reach out with any questions, feedback, or inquiries.
+          <h2 className="text-4xl font-bold mb-4 text-slate-800">Get in Touch</h2>
+          <p className="text-slate-600 mb-6 text-base leading-relaxed">
+            We&apos;d love to hear from you. Whether you have questions about courses, admissions, or anything else — our team is ready to help.
           </p>
-          <ul className="space-y-4 text-muted-foreground">
+          <ul className="space-y-5 text-slate-600 text-base">
             <li className="flex items-center gap-3">
-              <Mail className="text-primary" /> info@institute.com
+              <Mail className="text-indigo-600 w-5 h-5" />
+              <span>info@institute.com</span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="text-primary" /> +91 98765 43210
+              <Phone className="text-indigo-600 w-5 h-5" />
+              <span>+91 90000 00000</span>
             </li>
             <li className="flex items-center gap-3">
-              <MapPin className="text-primary" /> Kolhapur, Maharashtra, India
+              <MapPin className="text-indigo-600 w-5 h-5" />
+              <span>Kolhapur, Maharashtra, India</span>
             </li>
           </ul>
         </div>
 
         {/* Contact Form */}
-        <form className="bg-white border border-indigo-200 p-6 rounded-xl space-y-4 shadow">
-          <Input type="text" placeholder="Your Name" required />
-          <Input type="email" placeholder="Your Email" required />
-          <Textarea placeholder="Your Message" rows={5} required />
-          <Button type="submit" className="w-1/2 border text-center bg-indigo-600 text-white hover:bg-indigo-700 hover:cursor-pointer">Send Message</Button>
+        <form className="bg-white border border-indigo-200 p-8 rounded-2xl space-y-5 shadow-md">
+          <Input type="text" placeholder="Your Name" required className="text-sm" />
+          <Input type="email" placeholder="Your Email" required className="text-sm" />
+          <Textarea placeholder="Your Message" rows={5} required className="text-sm" />
+          <div className="text-right">
+            <Button
+              type="submit"
+              className="bg-indigo-600 hover:bg-indigo-700 transition text-white px-6 py-2 rounded-md"
+            >
+              Send Message
+            </Button>
+          </div>
         </form>
       </div>
     </section>

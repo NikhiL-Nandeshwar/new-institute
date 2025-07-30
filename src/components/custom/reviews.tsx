@@ -25,21 +25,25 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id='reviews' className="bg-slate-100 text-slate-700 py-16 px-4">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800">What Our Students Say</h2>
-        <p className="text-muted-foreground mt-2">Real stories. Real impact.</p>
+    <section id="reviews" className="bg-slate-100 text-slate-700 py-20 px-4">
+      <div className="max-w-6xl mx-auto text-center mb-16">
+        <h2 className="text-4xl font-bold text-gray-800">What Our Students Say</h2>
+        <p className="text-lg text-gray-500 mt-2">Real stories. Real impact.</p>
       </div>
 
-      <div className="space-y-10 max-w-4xl mx-auto">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="relative bg-white p-6 rounded-xl shadow-sm border-l-4 border-yellow-500"
+            className="relative bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition duration-300"
           >
-            <Quote className="absolute -top-4 left-4 text-yellow-500 w-6 h-6 bg-white rounded-full p-1 shadow" />
-            <p className="text-gray-700 text-base italic mb-3">“{review.feedback}”</p>
-            <p className="text-right font-semibold text-yellow-500">— {review.name}</p>
+            <div className="absolute -top-5 left-5 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center shadow-md">
+              <Quote className="text-white w-5 h-5" />
+            </div>
+            <p className="text-gray-700 text-base leading-relaxed mt-6 italic">
+              “{review.feedback}”
+            </p>
+            <p className="text-right mt-4 font-semibold text-yellow-600">— {review.name}</p>
           </div>
         ))}
       </div>
