@@ -8,7 +8,7 @@ const teachers = [
     image: "/F.png",
   },
   {
-    name: "Mr. Ramesh Kulkarni",
+    name: "Mr. Siddhesh Kulkarni",
     subject: "Full Stack Development",
     image: "/M.png",
   },
@@ -18,7 +18,7 @@ const teachers = [
     image: "/F.png",
   },
   {
-    name: "Mr. Arvind Sinha",
+    name: "Mr. Arvind Gaikwad",
     subject: "Cyber Security",
     image: "/M.png",
   },
