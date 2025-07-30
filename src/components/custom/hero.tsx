@@ -7,7 +7,7 @@ const Hero = () => {
                 <img
                     src="/bg.png"
                     alt="Background"
-                    className="w-full h-full object-cover opacity-10"
+                    className="w-full h-full md:object-cover object-fill opacity-10 p-2"
                 />
                 <div className="absolute inset-0 bg-white opacity-30" /> {/* Optional: softens image over bg-indigo-50 */}
             </div>

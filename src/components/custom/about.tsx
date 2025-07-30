@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <section id="about" className="bg-slate-50 text-gray-700 py-16 px-4">
+    <section id="about" className="bg-slate-50 text-gray-700 py-8 px-4">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Image (optional) */}
         <div>
