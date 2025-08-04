@@ -1,11 +1,14 @@
+/* eslint-disable react/jsx-no-undef */
 "use client";
 
-import { Phone, Menu, X } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Phone, Menu, X } from "lucide-react";
 
 const sections = [
   { id: "home", label: "Home" },
+  { id: "results", label: "Result"},
   { id: "about", label: "About" },
   { id: "courses", label: "Courses" },
   { id: "teacher", label: "Our Teachers" },
@@ -41,32 +44,34 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-zinc-200 shadow p-1">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-indigo-500">
-          I N S T I T U T E
+    <header className="fixed top-0 left-0 w-full z-50 bg-stone-50 shadow">
+      <div className="max-w-screen-xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+        {/* Logo Section */}
+        <Link href="/" className="flex items-center space-x-1 text-indigo-500 min-w-[150px]">
+          <Image src="/ml.png" alt="Logo" width={55} height={55} />
+          <div className="flex flex-col leading-tight">
+            <span className="text-xl font-bold">MOHIM</span>
+            <span className="text-xs text-indigo-400 font-semibold -mt-1">ACADEMY</span>
+          </div>
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6">
-          {sections.map(({ id, label }) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              className={`hover:text-indigo-500 transition-colors ${activeSection === id
-                ? "text-indigo-600 font-semibold"
-                : "text-gray-700"
+        {/* Desktop Navigation and Phone */}
+        <div className="hidden md:flex items-center gap-6 flex-wrap">
+          <nav className="flex space-x-6">
+            {sections.map(({ id, label }) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className={`transition-colors hover:text-indigo-500 ${
+                  activeSection === id ? "text-indigo-600 font-semibold" : "text-gray-700"
                 }`}
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
 
-        {/* Phone link (desktop only) */}
-        <div className="hidden md:block relative">
-          <a
+          {/* <a
             href="tel:+6522441100"
             className="text-sm text-white pl-12 pr-4 py-2 rounded-md bg-indigo-500 inline-flex items-center relative"
           >
@@ -74,46 +79,45 @@ export default function Navbar() {
               <Phone className="w-4 h-4 text-white" />
             </div>
             +91 9000 0000
-          </a>
+          </a> */}
         </div>
 
-        {/* Hamburger (mobile only) */}
+        {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-indigo-600"
+          className="md:hidden text-indigo-600 ml-auto"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
-      </div>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-indigo-50 shadow-inner">
-          <nav className="flex flex-col items-start px-6 py-4 space-y-4">
-            {sections.map(({ id, label }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block w-full text-base transition-colors ${activeSection === id
-                  ? "text-indigo-700 font-semibold"
-                  : "text-gray-700"
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="w-full md:hidden bg-indigo-50 shadow-inner mt-2 rounded-md">
+            <nav className="flex flex-col items-start px-6 py-4 space-y-4">
+              {sections.map(({ id, label }) => (
+                <a
+                  key={id}
+                  href={`#${id}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block w-full text-base transition-colors ${
+                    activeSection === id ? "text-indigo-700 font-semibold" : "text-gray-700"
                   }`}
-              >
-                {label}
-              </a>
-            ))}
+                >
+                  {label}
+                </a>
+              ))}
 
-            <a
-              href="tel:+6522441100"
-              className="mt-4 inline-flex items-center gap-2 text-indigo-600 text-sm"
-            >
-              <Phone className="w-4 h-4" />
-              +91 9000 0000
-            </a>
-          </nav>
-        </div>
-      )}
+              {/* <a
+                href="tel:+6522441100"
+                className="mt-4 inline-flex items-center gap-2 text-indigo-600 text-sm"
+              >
+                <Phone className="w-4 h-4" />
+                +91 9000 0000
+              </a> */}
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
   );
 }

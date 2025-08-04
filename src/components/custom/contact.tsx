@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 bg-sky-50">
+    <section id="contact" className="py-16 px-4 bg-sky-50">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Contact Info */}
         <div>
@@ -16,17 +16,26 @@ export default function Contact() {
           <ul className="space-y-5 text-slate-600 text-base">
             <li className="flex items-center gap-3">
               <Mail className="text-indigo-600 w-5 h-5" />
-              <span>info@institute.com</span>
+              <a href="mailto:admin@mohim.in" className="hover:underline">admin@mohimacademy.in</a>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="text-indigo-600 w-5 h-5" />
-              <span>+91 90000 00000</span>
+              <a href="tel:+918149304666" className="hover:underline">+91 8149304666</a>
             </li>
             <li className="flex items-center gap-3">
               <MapPin className="text-indigo-600 w-5 h-5" />
-              <span>Kolhapur, Maharashtra, India</span>
+              <a
+                href="https://www.google.com/maps?q=F-05,06+DC+Plaza+Nagala+Park,+Kolhapur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                F-05,06 DC Plaza, Nagala Park, Kolhapur
+              </a>
             </li>
           </ul>
+
+
         </div>
 
         {/* Contact Form */}

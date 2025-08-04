@@ -14,24 +14,20 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative max-w-7xl mx-auto text-center pt-7">
-                <h1 className="text-4xl font-semibold mb-6 text-indigo-500">
-                    Empowering Education for a Brighter Future
+                <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-indigo-500">
+                    Transforming Passion Into Celebration
                 </h1>
-                <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+                <p className="text-gray-500 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
                     Join our institute to gain knowledge, skills, and confidence to succeed in your academic and professional journey.
                 </p>
-                <div className="flex justify-center gap-4">
+                {/* Download Brochure */}
+                <div className="flex justify-center">
                     <a
-                        href="/admissions"
-                        className="bg-indigo-600 text-white hover:bg-indigo-700 px-6 py-3 rounded-xl text-sm font-medium transition"
+                        href="/pdf/Mohim_Academy_Broucher.pdf"
+                        download
+                        className="bg-indigo-500 text-white hover:bg-indigo-600 px-6 py-3 rounded-xl text-sm font-medium transition"
                     >
-                        Apply Now
-                    </a>
-                    <a
-                        href="#courses"
-                        className="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-xl text-sm font-medium hover:bg-indigo-100 transition"
-                    >
-                        View Courses
+                        📄 Download Brochure
                     </a>
                 </div>
             </div>
