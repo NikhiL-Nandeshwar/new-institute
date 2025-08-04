@@ -7,7 +7,7 @@ import Footer from "@/components/custom/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Institute",
+    title: "Mohim Academy",
     description: "Educational Institute",
 };
 

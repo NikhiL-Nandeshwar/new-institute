@@ -62,7 +62,7 @@ export default function Navbar() {
               <a
                 key={id}
                 href={`#${id}`}
-                className={`transition-colors hover:text-indigo-500 ${activeSection === id ? "text-indigo-600 font-semibold" : "text-gray-700"
+                className={`transition-colors hover:text-yellow-600 ${activeSection === id ? "text-yellow-500 font-semibold" : "text-gray-700"
                   }`}
               >
                 {label}
