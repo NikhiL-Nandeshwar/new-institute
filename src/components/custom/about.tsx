@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Flame, Sparkles } from "lucide-react";
+import { CheckCircleIcon, Flame, LightbulbIcon, Sparkles } from "lucide-react";
 import { GraduationCap, Star, Users, ShieldCheck } from "lucide-react";
 
 const features = [
@@ -88,18 +88,35 @@ export default function About() {
         <div className="absolute left-0 top-6 bottom-6 w-1 bg-yellow-400 rounded-r-md" />
 
         {/* Paragraphs */}
-        <div className="relative overflow-hidden bg-stone-100 border border-indigo-200 rounded-3xl shadow-xl m-2 sm:p-10 animate-fade-up">
-          <div className="space-y-6 p-8 md:p-3  text-justify text-gray-700 text-lg leading-relaxed">
-            <p>
-              <strong className="text-yellow-500">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
+        <div className="relative overflow-hidden bg-stone-100 border border-indigo-200 rounded-3xl shadow-xl m-2 md:p-5 p-3.5 animate-fade-up">
+          <div className="space-y-4 text-justify text-gray-700 text-lg leading-relaxed p-2">
+
+            {/* Paragraph 1 */}
+            <p className="flex items-start gap-4">
+              <GraduationCap className="w-7 h-7 text-indigo-500 shrink-0 mt-1" />
+              <span>
+                <strong className="text-yellow-500 font-semibold text-xl">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
+              </span>
             </p>
 
-            <p>
-              Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing (DOST & Mega Tests), personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
+            <Separator className="my-8 bg-indigo-200 h-3 w-1/3" />
+
+            {/* Paragraph 2 */}
+            <p className="flex items-start gap-4">
+              <LightbulbIcon className="w-7 h-7 text-indigo-500 shrink-0 mt-1" />
+              <span>
+                Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing (DOST & Mega Tests), personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
+              </span>
             </p>
 
-            <p>
-              MOHIM emphasizes strong fundamentals, national benchmarks, time management, and wellness—building confident, resilient, and future-ready individuals.
+            <Separator className="my-8 bg-indigo-200 h-3 w-1/3" />
+
+            {/* Paragraph 3 */}
+            <p className="flex items-start gap-4">
+              <CheckCircleIcon className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
+              <span>
+                MOHIM emphasizes strong fundamentals, national benchmarks, time management, and wellness—building confident, resilient, and future-ready individuals.
+              </span>
             </p>
           </div>
         </div>
@@ -115,7 +132,7 @@ export default function About() {
       <div className="max-w-5xl mx-auto space-y-12 p-3">
         {features.map((item, i) => (
           <div key={i} className="relative pl-6 border-l-4 border-indigo-300 group">
-            <div className="absolute -left-[13px] top-2 w-6 h-6 bg-white border-4 border-indigo-400 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
+            <div className="absolute -left-[14px] top-2 w-6 h-6 bg-white border-4 border-indigo-400 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
             <h3 className="text-2xl font-semibold text-indigo-800 mb-3 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-yellow-400" />
               {item.title}
