@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Sparkles } from "lucide-react";
+import { Flame, Sparkles } from "lucide-react";
 import { GraduationCap, Star, Users, ShieldCheck } from "lucide-react";
 
 const features = [
@@ -68,7 +68,6 @@ export default function About() {
     <section id="about" className="py-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-indigo-50 to-sky-50">
       {/* Section Header */}
       <div className="max-w-4xl mx-auto text-center mb-8">
-        
         <h2 className="text-3xl md:text-4xl font-bold text-indigo-800">
           About <span className="text-yellow-500">MOHIM</span>
         </h2>
@@ -84,25 +83,41 @@ export default function About() {
       </div>
 
       {/* MOHIM Overview */}
-      <div className="max-w-5xl mx-auto bg-white border border-indigo-200 shadow-xl rounded-3xl p-6 sm:p-10 mb-16 text-gray-700 text-lg leading-relaxed space-y-6">
-        <p className="text-justify">
-          <strong className="text-yellow-500">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
-        </p>
-        <p className="text-justify">
-          Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing (DOST & Mega Tests), personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
-        </p>
-        <p className="text-justify">
-          MOHIM emphasizes strong fundamentals, national benchmarks, time management, and wellness—building confident, resilient, and future-ready individuals.
-        </p>
+      <div className="relative max-w-5xl mx-auto rounded-3xl border border-indigo-200 shadow-lg p-6 sm:p-10 mb-16 text-gray-700 text-lg leading-relaxed animate-slide-up-fade bg-white">
+        {/* Vertical Accent */}
+        <div className="absolute left-0 top-6 bottom-6 w-1 bg-yellow-400 rounded-r-md" />
+
+        {/* Paragraphs */}
+        <div className="relative overflow-hidden bg-stone-100 border border-indigo-200 rounded-3xl shadow-xl m-2 sm:p-10 animate-fade-up">
+          <div className="space-y-6 p-5 md:p-3  text-justify text-gray-700 text-lg leading-relaxed">
+            <p>
+              <strong className="text-yellow-500">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
+            </p>
+
+            <p>
+              Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing (DOST & Mega Tests), personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
+            </p>
+
+            <p>
+              MOHIM emphasizes strong fundamentals, national benchmarks, time management, and wellness—building confident, resilient, and future-ready individuals.
+            </p>
+          </div>
+        </div>
+
+
+        {/* Closing Line */}
+        {/* <div className="mt-6 text-center font-semibold text-indigo-700">
+          MOHIM shapes not just toppers, but thinkers, doers, and leaders.
+        </div> */}
       </div>
 
       {/* Feature Blocks */}
-      <div className="max-w-5xl mx-auto space-y-12">
+      <div className="max-w-5xl mx-auto space-y-12 p-3">
         {features.map((item, i) => (
           <div key={i} className="relative pl-6 border-l-4 border-indigo-300 group">
             <div className="absolute -left-[13px] top-2 w-6 h-6 bg-white border-4 border-indigo-400 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
             <h3 className="text-2xl font-semibold text-indigo-800 mb-3 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-yellow-500" />
+              <Sparkles className="w-5 h-5 text-yellow-400" />
               {item.title}
             </h3>
             <div className="text-gray-700 text-justify leading-relaxed">{item.content}</div>

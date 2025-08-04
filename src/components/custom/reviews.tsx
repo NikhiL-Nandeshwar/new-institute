@@ -63,13 +63,13 @@ Cracking IIT‑JEE felt like a dream; thanks to Mohim’s guidance and support i
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="bg-slate-100 text-slate-700 py-20 px-4">
+    <section id="reviews" className="bg-slate-100 text-slate-700 py-20 px-4 p-5">
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-indigo-800 tracking-tight">What Our Students Say</h2>
         <p className="text-lg text-gray-500 mt-3">Stories of perseverance, clarity & success.</p>
       </div>
 
-      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto p-3 sm:p-0">
         {reviews.map((review, i) => (
           <div
             key={i}

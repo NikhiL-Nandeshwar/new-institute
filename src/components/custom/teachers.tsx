@@ -72,7 +72,7 @@ export default function Teachers() {
   );
 
   return (
-    <section id="teacher" className="py-20 px-4 bg-white">
+    <section id="teacher" className="py-20 p-5 bg-white">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-indigo-800">Meet Our Faculty</h2>
         <p className="text-gray-500 mt-3 text-lg">
@@ -81,12 +81,12 @@ export default function Teachers() {
       </div>
 
       {/* Directors in 2-column row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 p-3 sm:p-0">
         {directors.map((teacher, index) => renderCard(teacher, index))}
       </div>
 
       {/* Other teachers below */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto p-3 sm:p-0">
         {others.map((teacher, index) => renderCard(teacher, index))}
       </div>
     </section>

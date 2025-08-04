@@ -5,8 +5,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 px-4 bg-sky-50">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <section id="contact" className="py-16 px-4 bg-sky-50 ">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-3 sm:p-0">
         {/* Contact Info */}
         <div>
           <h2 className="text-4xl font-bold mb-4 text-indigo-800">Get in Touch</h2>
