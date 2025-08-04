@@ -59,7 +59,7 @@ export default function Teachers() {
         </CardTitle>
         <p className=" text-gray-500 font-semibold text-center">{teacher.subject}</p>
         {teacher.designation && (
-          <p className=" text-yellow-600 font-medium mt-0.5">{teacher.designation}</p>
+          <p className=" text-yellow-500 font-medium mt-0.5">{teacher.designation}</p>
         )}
       </CardHeader>
       <CardContent className="px-6 pb-6">

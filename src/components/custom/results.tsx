@@ -40,7 +40,7 @@ export default function Results() {
   return (
     <section id="results" className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center mb-10">
-        <h2 className="text-4xl font-bold text-indigo-700">Exam Achievements</h2>
+        <h2 className="text-4xl font-bold text-indigo-800">Exam Achievements</h2>
         <p className="text-gray-600 mt-3 text-lg">
           Proud moments from our top performers
         </p>

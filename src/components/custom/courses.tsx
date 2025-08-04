@@ -7,24 +7,35 @@ const streams = [
   {
     title: 'IIT‑JEE (18‑Month Program)',
     icon: '/icons/IIT_JEE.png',
-    description: `An optimized productive course of 18 months with a course schedule of minimum 5 hours of teaching and doubt solving and 1 hour of testing daily under the DOST (Daily Objective and Subjective Testing) six days a week. Accompanied with daily assignments and weekly tests of 180 marks and a IIT Mains/Advanced based Mega‑test of 300 marks every month. An exhaustive schedule of 2500 problems per month, monitored and resolved by a dedicated system of doubt solving and mentoring. The topics would be optimally aligned with the subjective examination preparation of the XII th Board examination.`,
+    description: `An optimized productive course of 18 months with a schedule of minimum 5 hours of teaching and doubt-solving, plus 1 hour of daily testing under DOST (Daily Objective and Subjective Testing) — six days a week. Includes daily assignments, weekly tests of 180 marks, and an IIT Mains/Advanced-based Mega Test of 300 marks every month.
+
+Covers over 2500 problems monthly, with doubt resolution and personal mentoring.Topics are aligned with XII Board preparation for better dual readiness.`,
   },
   {
     title: 'NEET (18‑Month Program)',
     icon: '/icons/NEET_LOGO.png',
-    description: `NEET students would be mentored with an obligatory math schedule of four months to prepare the base for NEET‑level Physics and Chemistry and would be mentored with a well planned course of 18 months with a course schedule of minimum 5 hours of Teaching and Doubt Solving and 1 hour of Testing daily under the DOST (Daily Objective and Subjective Testing) six days a week accompanied with daily assignment and weekly test of 180 marks and a Mega‑test of 720 marks every month. The course also would involve an allied activity schedule of actual slide preparation with state of art lab equipment, botanical field trips and excursions and regular Seminar Presentations by students.`,
+    description: `NEET students start with 4 months of math to strengthen their Physics and Chemistry base.The 18-month course includes 5 hours of Teaching & Doubt-Solving and 1 hour of Testing daily under the DOST system — six days a week.
+Regular assignments, weekly tests of 180 marks, and a monthly Mega Test of 720 marks ensure rigorous evaluation.
+
+Also features botanical field trips, lab slide preparation, and seminar presentations for holistic science learning.`,
   },
   {
     title: 'XI & XII Board Prep',
     icon: '/icons/mahalogo.png',
-    description: `The XI th and XII th standard syllabus would be optimally aligned with the JEE / NEET pattern and covered with essential inputs to prepare the students for the Board Examination with weekly and monthly tests based on the Board pattern and an exhaustive Preliminary Examination Schedule. The college schedules would be facilitated to one day per week according to the respective requirements.`,
+    description: `Syllabus of XI & XII is aligned with JEE/NEET patterns to ensure dual preparation.Includes weekly and monthly tests modeled after the Board exam pattern.
+
+Features an exhaustive Preliminary Exam schedule and optimal Board preparation.College attendance is facilitated to one day per week as needed.`,
   },
   {
     title: 'Foundation (MSAP)',
     icon: '/icons/foundation.png',
-    description: `The institute offers a ten month weekend course [Saturday and Sunday based] for VIII, IX, X and XI th standard students designated as MSAP (Math and Science Augmentation Programme) involving a scientifically planned module to create interest in students regarding math and science and develop their essential skills related to IIT JEE and NEET with a mentoring of minimum 100 hours, regular testing and project work designed to involve the students in Science projects to give first hand experience of taking readings, measurements and creating tools and Gadgets. The programme specially involves the alignment with the school syllabus to create comfort and efficiency in students while learning.`,
+    description: `A 10-month weekend program (Saturday & Sunday) for students of Classes VIII to XI.MSAP (Math and Science Augmentation Programme) aims to generate interest and build IIT JEE/NEET-oriented skills.
+
+Includes 100+ hours of mentoring, hands-on science project work, testing, and alignment with school syllabus.
+Focuses on early conceptual clarity, measurement skills, and basic tool/gadget development.`,
   },
 ];
+
 
 export default function Courses() {
   return (
@@ -48,7 +59,7 @@ export default function Courses() {
               </div>
               <CardTitle className="text-xl font-semibold">{stream.title}</CardTitle>
             </CardHeader>
-            <CardContent className="p-6 bg-white">
+            <CardContent className="px-8 py-2 bg-white">
               <p className="text-gray-700 whitespace-pre-line leading-relaxed">
                 {stream.description}
               </p>

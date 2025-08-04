@@ -1,10 +1,19 @@
 const Footer = () => {
   return (
-    <footer className="bg-stone-50 border-t border-zinc-200 text-sm text-gray-600">
-      <div className="max-w-7xl mx-auto px-4 py-6 text-center">
-        <p>&copy; {new Date().getFullYear()} Mohim Academy. All rights reserved.</p>
+    <div className="text-center text-xs text-gray-600 bg-stone-50 border-t border-zinc-200 p-4 space-y-1">
+      <div>©{new Date().getFullYear()} Mohim Academy. All rights reserved.</div>
+      <div>
+        Managed by{" "}
+        <a
+          href="https://nexspire.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-primary"
+        >
+          NexSpire Technologies
+        </a>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -15,15 +15,15 @@ export default function Contact() {
           </p>
           <ul className="space-y-5 text-slate-600 text-base">
             <li className="flex items-center gap-3">
-              <Mail className="text-yellow-600 w-5 h-5" />
+              <Mail className="text-yellow-500 w-5 h-5" />
               <a href="mailto:admin@mohim.in" className="hover:underline">admin@mohimacademy.in</a>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="text-yellow-600 w-5 h-5" />
+              <Phone className="text-yellow-500 w-5 h-5" />
               <a href="tel:+918149304666" className="hover:underline">+91 8149304666</a>
             </li>
             <li className="flex items-center gap-3">
-              <MapPin className="text-yellow-600 w-5 h-5" />
+              <MapPin className="text-yellow-500 w-5 h-5" />
               <a
                 href="https://www.google.com/maps?q=F-05,06+DC+Plaza+Nagala+Park,+Kolhapur"
                 target="_blank"
