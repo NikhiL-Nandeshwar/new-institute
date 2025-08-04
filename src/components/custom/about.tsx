@@ -89,7 +89,7 @@ export default function About() {
 
         {/* Paragraphs */}
         <div className="relative overflow-hidden bg-stone-100 border border-indigo-200 rounded-3xl shadow-xl m-2 sm:p-10 animate-fade-up">
-          <div className="space-y-6 p-5 md:p-3  text-justify text-gray-700 text-lg leading-relaxed">
+          <div className="space-y-6 p-8 md:p-3  text-justify text-gray-700 text-lg leading-relaxed">
             <p>
               <strong className="text-yellow-500">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
             </p>

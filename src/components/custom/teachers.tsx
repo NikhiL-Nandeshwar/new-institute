@@ -4,41 +4,45 @@ import Image from "next/image";
 const teachers = [
   {
     name: "Dr. Abhijeet Patil",
-    subject: "BSc. Microbiology, MEM",
-    designation: "Director",
+    education: "BSc. Microbiology, MEM",
+    designation: "Founder & Director",
     image: "/Abhijeet.png",
   },
   {
     name: "Mr. Abhishek Nagdev",
-    subject: "B-Tech [BITS PILANI]",
-    designation: "Director",
+    education: "B-Tech [BITS PILANI]",
+    designation: "Founder & Director",
     image: "/Abhishek.png",
   },
   {
-    name: "Ms. Priya Nair",
-    subject: "Digital Marketing",
-    image: "/F.png",
-  },
-  {
-    name: "Mr. Arvind Gaikwad",
-    subject: "Cyber Security",
+    name: "Mr. Saurabh Dhabu",
+    education: "B.E. Mechanical Engineering, IIT Delhi",
+    designation: "",
     image: "/M.png",
   },
   {
-    name: "Ms. Isha Desai",
-    subject: "UI/UX Design",
+    name: "Miss. Drushti Daryani",
+    education: "B.E. Food Technology, ICT- Mumbai",
+    designation: "",
     image: "/F.png",
   },
   {
-    name: "Dr. Rajeev Deol",
-    subject: "Cloud Computing",
+    name: "Mr. Soham Ghewari",
+    education: "B.E. Mechanical Engineering, IIT Indore",
+    designation: "",
+    image: "/M.png",
+  },
+  {
+    name: "Mr. Kiran Narkar (Faculty)",
+    education: "B.E. Mechanical Engineering, M.E. (Design Engineering)",
+    designation: "",
     image: "/M.png",
   },
 ];
 
 export default function Teachers() {
-  const directors = teachers.filter((t) => t.designation === "Director");
-  const others = teachers.filter((t) => t.designation !== "Director");
+  const directors = teachers.filter((t) => t.designation.includes("Director"));
+const others = teachers.filter((t) => !t.designation.includes("Director"));
 
   const renderCard = (teacher: typeof teachers[0], index: number) => (
     <Card
@@ -57,7 +61,7 @@ export default function Teachers() {
         <CardTitle className="mt-4 text-xl font-semibold text-indigo-700 text-center">
           {teacher.name}
         </CardTitle>
-        <p className=" text-gray-500 font-semibold text-center">{teacher.subject}</p>
+        <p className=" text-gray-500 font-semibold text-center">{teacher.education}</p>
         {teacher.designation && (
           <p className=" text-yellow-500 font-medium mt-0.5">{teacher.designation}</p>
         )}
