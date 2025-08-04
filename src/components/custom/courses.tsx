@@ -40,7 +40,7 @@ export default function Courses() {
         {streams.map((stream, i) => (
            <Card
             key={i}
-            className="hover:shadow-lg border-l-4 border-indigo-500 transition duration-300"
+            className="hover:shadow-lg border-l-4 border-indigo-300 transition duration-300"
           >
             <CardHeader className="flex items-center gap-3 bg-sky-50 text-yellow-500 p-4 rounded-t-lg">
               <div className="rounded-full bg-white w-12 h-12 flex items-center justify-center overflow-hidden">
