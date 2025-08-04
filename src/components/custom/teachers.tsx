@@ -74,7 +74,7 @@ export default function Teachers() {
   return (
     <section id="teacher" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-800">Meet Our Faculty</h2>
+        <h2 className="text-4xl font-bold text-indigo-800">Meet Our Faculty</h2>
         <p className="text-gray-500 mt-3 text-lg">
           Learn from industry leaders and passionate educators.
         </p>

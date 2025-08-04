@@ -8,7 +8,7 @@ import { Phone, Menu, X } from "lucide-react";
 
 const sections = [
   { id: "home", label: "Home" },
-  { id: "results", label: "Result"},
+  { id: "results", label: "Result" },
   { id: "about", label: "About" },
   { id: "courses", label: "Courses" },
   { id: "teacher", label: "Our Teachers" },
@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-stone-50 shadow">
-      <div className="max-w-screen-xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+      <div className="max-w-screen-xl mx-auto px-5 py-3 flex flex-wrap justify-between items-center gap-4">
         {/* Logo Section */}
         <Link href="/" className="flex items-center space-x-1 text-indigo-500 min-w-[150px]">
           <Image src="/ml.png" alt="Logo" width={55} height={55} />
@@ -62,9 +62,8 @@ export default function Navbar() {
               <a
                 key={id}
                 href={`#${id}`}
-                className={`transition-colors hover:text-indigo-500 ${
-                  activeSection === id ? "text-indigo-600 font-semibold" : "text-gray-700"
-                }`}
+                className={`transition-colors hover:text-indigo-500 ${activeSection === id ? "text-indigo-600 font-semibold" : "text-gray-700"
+                  }`}
               >
                 {label}
               </a>
@@ -99,9 +98,8 @@ export default function Navbar() {
                   key={id}
                   href={`#${id}`}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block w-full text-base transition-colors ${
-                    activeSection === id ? "text-indigo-700 font-semibold" : "text-gray-700"
-                  }`}
+                  className={`block w-full text-base transition-colors ${activeSection === id ? "text-indigo-700 font-semibold" : "text-gray-700"
+                    }`}
                 >
                   {label}
                 </a>

@@ -26,7 +26,7 @@ export default function About() {
     <section id="about" className="py-20 px-6 bg-gradient-to-br from-white via-indigo-50 to-sky-50">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-indigo-800">
-          What Makes <span className="text-yellow-500">MOHIM</span> Unique
+          Why <span className="text-yellow-500">MOHIM</span> Stands Out
         </h2>
         <p className="text-gray-600 mt-4 text-lg">
           Our core pillars drive performance, resilience, and confidence.

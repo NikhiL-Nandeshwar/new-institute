@@ -39,7 +39,7 @@ export default function Reviews() {
   return (
     <section id="reviews" className="bg-slate-100 text-slate-700 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-800 tracking-tight">What Our Students Say</h2>
+        <h2 className="text-4xl font-bold text-indigo-800 tracking-tight">What Our Students Say</h2>
         <p className="text-lg text-gray-500 mt-3">Stories of perseverance, clarity & success.</p>
       </div>
 

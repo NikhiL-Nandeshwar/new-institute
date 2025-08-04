@@ -9,21 +9,21 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Contact Info */}
         <div>
-          <h2 className="text-4xl font-bold mb-4 text-slate-800">Get in Touch</h2>
+          <h2 className="text-4xl font-bold mb-4 text-indigo-800">Get in Touch</h2>
           <p className="text-slate-600 mb-6 text-base leading-relaxed">
             We&apos;d love to hear from you. Whether you have questions about courses, admissions, or anything else — our team is ready to help.
           </p>
           <ul className="space-y-5 text-slate-600 text-base">
             <li className="flex items-center gap-3">
-              <Mail className="text-indigo-600 w-5 h-5" />
+              <Mail className="text-yellow-600 w-5 h-5" />
               <a href="mailto:admin@mohim.in" className="hover:underline">admin@mohimacademy.in</a>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="text-indigo-600 w-5 h-5" />
+              <Phone className="text-yellow-600 w-5 h-5" />
               <a href="tel:+918149304666" className="hover:underline">+91 8149304666</a>
             </li>
             <li className="flex items-center gap-3">
-              <MapPin className="text-indigo-600 w-5 h-5" />
+              <MapPin className="text-yellow-600 w-5 h-5" />
               <a
                 href="https://www.google.com/maps?q=F-05,06+DC+Plaza+Nagala+Park,+Kolhapur"
                 target="_blank"

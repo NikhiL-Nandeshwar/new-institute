@@ -14,7 +14,7 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative max-w-7xl mx-auto text-center pt-7">
-                <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-indigo-500">
+                <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-indigo-700">
                     Transforming Passion Into Celebration
                 </h1>
                 <p className="text-gray-500 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
