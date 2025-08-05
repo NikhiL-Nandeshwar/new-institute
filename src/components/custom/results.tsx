@@ -11,11 +11,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const examResultImages = [
-  { src: "/institute.png", alt: "Result 1" },
-  { src: "/institute.png", alt: "Result 2" },
-  { src: "/institute.png", alt: "Result 3" },
-  { src: "/institute.png", alt: "Result 4" },
-  { src: "/institute.png", alt: "Result 5" },
+  { src: "/results/new1.jpg", alt: "Result 1" },
+  { src: "/results/new2.webp", alt: "Result 2" },
+  { src: "/results/new3.jpg", alt: "Result 3" },
+  { src: "/results/new4.webp", alt: "Result 4" },
+  { src: "/results/2.1.webp", alt: "Result 5" },
 ];
 
 export default function Results() {
@@ -34,8 +34,8 @@ export default function Results() {
   const groupedImages = isSmallScreen
     ? examResultImages.map((img) => [img])
     : Array.from({ length: Math.ceil(examResultImages.length / 2) }, (_, i) =>
-        examResultImages.slice(i * 2, i * 2 + 2)
-      );
+      examResultImages.slice(i * 2, i * 2 + 2)
+    );
 
   return (
     <section id="results" className="bg-white py-20 px-4">
@@ -46,16 +46,16 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-8xl mx-auto">
         <Carousel className="w-full">
           <CarouselContent>
             {groupedImages.map((group, i) => (
               <CarouselItem key={i}>
-                <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex bg-stone-50 flex-wrap justify-center gap-6">
                   {group.map((img, idx) => (
                     <div
                       key={idx}
-                      className="relative w-full sm:w-[500px] h-[500px] rounded-xl overflow-hidden border shadow-md"
+                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[700px] h-[700px] overflow-hidden border shadow-md"
                     >
                       <Image
                         src={img.src}
