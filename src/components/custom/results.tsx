@@ -55,7 +55,7 @@ export default function Results() {
                   {group.map((img, idx) => (
                     <div
                       key={idx}
-                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[700px] h-[700px] overflow-hidden border shadow-md"
+                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[650px] h-[650px] overflow-hidden border shadow-md"
                     >
                       <Image
                         src={img.src}
