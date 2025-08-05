@@ -38,7 +38,7 @@ export default function Results() {
     );
 
   return (
-    <section id="results" className="bg-white py-20 px-4">
+    <section id="results" className="bg-stone-50 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-indigo-800">Exam Achievements</h2>
         <p className="text-gray-600 mt-3 text-lg">
@@ -46,16 +46,16 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="relative max-w-8xl mx-auto">
+      <div className="relative max-w-full mx-auto">
         <Carousel className="w-full">
           <CarouselContent>
             {groupedImages.map((group, i) => (
-              <CarouselItem key={i}>
+              <CarouselItem key={i} className="px-3">
                 <div className="flex bg-stone-50 flex-wrap justify-center gap-6">
                   {group.map((img, idx) => (
                     <div
                       key={idx}
-                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[650px] h-[650px] overflow-hidden border shadow-md"
+                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[40rem] h-[40rem] overflow-hidden border shadow-md"
                     >
                       <Image
                         src={img.src}
