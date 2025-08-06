@@ -46,7 +46,7 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="relative max-w-full mx-auto">
+      <div className="relative max-w-7xl mx-auto">
         <Carousel className="w-full">
           <CarouselContent>
             {groupedImages.map((group, i) => (
@@ -55,7 +55,7 @@ export default function Results() {
                   {group.map((img, idx) => (
                     <div
                       key={idx}
-                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[40rem] h-[40rem] overflow-hidden border shadow-md"
+                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[35rem] h-[35rem] overflow-hidden border shadow-md"
                     >
                       <Image
                         src={img.src}
