@@ -23,7 +23,7 @@ const Hero = () => {
                 {/* Download Brochure */}
                 <div className="flex justify-center">
                     <a
-                        href="/pdf/Mohim_Academy_Broucher.pdf"
+                        href="/pdf/brochure.pdf"
                         download
                         className="bg-indigo-500 text-white hover:bg-indigo-600 px-6 py-3 rounded-xl text-sm font-medium transition"
                     >

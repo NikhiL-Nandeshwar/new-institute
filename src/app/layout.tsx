@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/custom/navbar";
 import Footer from "@/components/custom/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <html lang="en">
             <body className={inter.className}>
                 <Navbar />
+                <Toaster richColors position="top-right" />
                 {children}
                 <Footer />
             </body>

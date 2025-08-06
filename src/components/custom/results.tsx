@@ -11,11 +11,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const examResultImages = [
-  { src: "/results/new1.jpg", alt: "Result 1" },
-  { src: "/results/new2.webp", alt: "Result 2" },
-  { src: "/results/new3.jpg", alt: "Result 3" },
-  { src: "/results/new4.webp", alt: "Result 4" },
-  { src: "/results/2.1.webp", alt: "Result 5" },
+  { src: "/results/brochure-2.jpg", alt: "Result 1" },
+  { src: "/results/brochure-4.jpg", alt: "Result 2" },
+  { src: "/results/brochure-5.jpg", alt: "Result 3" },
+  { src: "/results/brochure-6.jpg", alt: "Result 4" },
+  { src: "/results/brochure-3.jpg", alt: "Result 5" },
 ];
 
 export default function Results() {
@@ -55,7 +55,7 @@ export default function Results() {
                   {group.map((img, idx) => (
                     <div
                       key={idx}
-                      className="relative rounded-3xl bg-slate-100 w-full sm:w-[35rem] h-[35rem] overflow-hidden border shadow-md"
+                      className="relative rounded-xl bg-slate-100 w-full sm:w-[35rem] h-[35rem] overflow-hidden border shadow-md"
                     >
                       <Image
                         src={img.src}

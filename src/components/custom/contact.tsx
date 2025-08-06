@@ -1,11 +1,38 @@
+'use client';
+
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const res = await fetch("https://formspree.io/f/xeozrwbq", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    setLoading(false);
+
+    if (res.ok) {
+      toast.success("Your message was sent successfully. Thank you!");
+      setForm({ name: "", email: "", message: "" });
+    } else {
+      toast.error("Something went wrong. Please try again later.");
+    }
+  };
+
   return (
-    <section id="contact" className="py-16 px-4 bg-sky-50 ">
+    <section id="contact" className="py-16 px-4 bg-sky-50">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-3 sm:p-0">
         {/* Contact Info */}
         <div>
@@ -34,21 +61,47 @@ export default function Contact() {
               </a>
             </li>
           </ul>
-
-
         </div>
 
         {/* Contact Form */}
-        <form className="bg-white border border-indigo-200 p-8 rounded-2xl space-y-5 shadow-md">
-          <Input type="text" placeholder="Your Name" required className="text-sm" />
-          <Input type="email" placeholder="Your Email" required className="text-sm" />
-          <Textarea placeholder="Your Message" rows={5} required className="text-sm" />
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white border border-indigo-200 p-8 rounded-2xl space-y-5 shadow-md"
+        >
+          <Input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            value={form.name}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            className="text-sm"
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            value={form.email}
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
+            className="text-sm"
+          />
+          <Textarea
+            name="message"
+            placeholder="Your Message"
+            rows={5}
+            required
+            value={form.message}
+            onChange={(e) => setForm({ ...form, message: e.target.value })}
+            className="text-sm"
+          />
           <div className="text-right">
             <Button
               type="submit"
-              className="bg-indigo-600 hover:bg-indigo-700 transition text-white px-6 py-2 rounded-md"
+              disabled={loading}
+              className="bg-indigo-600 hover:bg-indigo-700 hover:cursor-pointer transition text-white px-6 py-2 rounded-md"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </div>
         </form>
