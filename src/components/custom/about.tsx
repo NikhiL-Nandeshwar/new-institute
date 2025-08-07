@@ -40,11 +40,13 @@ const features = [
           The real test of teaching is verified in the consistent performance of the student in the tests.
         </p>
         <p>
-          At <strong>MOHIM</strong> we have highly scientific testing modules, regular weekly long tests along with theory board papers and a MEGA test which is a mock JEE / NEET examination at every month end.
+          At <strong>MOHIM</strong> we have highly scientific testing modules, regular weekly long tests along with theory board papers and a MEGA test which is a mock JEE / NEET examination at every month end.   
         </p>
         <p>
-          The Testing Modules implemented create an environment of positive competitiveness and preparedness.
+                    Testing Modules implemented create an environment of positive competitiveness and preparedness.
+
         </p>
+        
       </div>
     ),
   },

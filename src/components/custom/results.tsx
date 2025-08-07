@@ -26,26 +26,28 @@ export default function Results() {
       </div>
 
       <div className="relative max-w-4xl mx-auto">
-        <Carousel className="w-full">
+        <Carousel className="w-full mx-1.5">
           <CarouselContent>
             {examResultImages.map((img, i) => (
-              <CarouselItem key={i} className="px-3">
-                <div className="relative aspect-video w-full bg-slate-100 border shadow-md rounded-xl overflow-hidden">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 768px"
-                  />
-                </div>
-              </CarouselItem>
+              <CarouselItem key={i} className="px-10 sm:px-12 md:px-3">
+
+  <div className="relative aspect-video w-full bg-slate-100 border shadow-md rounded-xl overflow-hidden">
+    <Image
+      src={img.src}
+      alt={img.alt}
+      fill
+      className="object-contain"
+      sizes="(max-width: 768px) 100vw, 768px"
+    />
+  </div>
+</CarouselItem>
+
             ))}
           </CarouselContent>
 
           {/* Navigation arrows */}
-          <CarouselPrevious className="absolute text-indigo-900 bg-indigo-200 hover:bg-indigo-300 left-0.5 md:-left-10 top-1/2 -translate-y-1/2 z-10" />
-          <CarouselNext className="absolute text-indigo-900 bg-indigo-200 hover:bg-indigo-300 right-0.5 md:-right-8 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselPrevious className="absolute text-indigo-900 bg-indigo-200 hover:bg-indigo-300 -left-3 md:-left-10 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute text-indigo-900 bg-indigo-200 hover:bg-indigo-300 right-0 md:-right-8 top-1/2 -translate-y-1/2 z-10" />
 
         </Carousel>
       </div>
