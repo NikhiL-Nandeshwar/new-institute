@@ -11,8 +11,9 @@ const teachers = [
   },
   {
     name: "Mr. Abhishek Nagdev",
-    education: "B.E. Civil - [selected for IIT-ROORKEE]",
+    education: "B.E. Civil",
     location: "BITS PILANI",
+    other: "[selected for IIT-ROORKEE]",
     designation: "Founder & Director",
     image: "/Abhishek.png",
   },
@@ -25,8 +26,9 @@ const teachers = [
   },
   {
     name: "Miss. Drushti Daryani",
-    education: "B.E. Food Technology - [selected for IIT-Thiruvananthapuram]",
+    education: "B.E. Food Technology",
     location: "ICT- Mumbai",
+    other: "[selected for IIT-Tirupati]",
     designation: "",
     image: "",
   },
@@ -88,13 +90,14 @@ export default function Teachers() {
         <CardTitle className="mt-4 text-xl font-semibold text-indigo-700 text-center">
           {teacher.name}
         </CardTitle>
-        <p className="text-gray-700 text-center font-medium mt-1">
+        <p className="text-slate-700 text-center mt-1">
           {teacher.education}
         </p>
         {teacher.location && (
-          <p className="text-muted-foreground text-sm text-center">{teacher.location}</p>
+          <p className="text-slate-600 text-center text-sm">{teacher.location}</p>
         )}
-        <p className="text-yellow-500 text-lg mt-1">{teacher.designation}</p>
+        <p className="text-zinc-500 mt-1">{teacher.other}</p>
+        <p className="text-amber-600 font-semibold text-lg mt-1">{teacher.designation}</p>
       </CardHeader>
     </Card>
   );
@@ -107,10 +110,11 @@ export default function Teachers() {
       <CardTitle className="text-lg font-semibold text-indigo-700">
         {teacher.name}
       </CardTitle>
-      <p className="text-gray-700 font-medium mt-1">{teacher.education}</p>
+      <p className="text-gray-700 font-medium">{teacher.education}</p>
       {teacher.location && (
-        <p className="text-muted-foreground mt-0.5">{teacher.location}</p>
+        <p className="text-muted-foreground">{teacher.location}</p>
       )}
+      <p className="text-zinc-500 font-medium">{teacher.other}</p>
     </Card>
   );
 
@@ -129,7 +133,7 @@ export default function Teachers() {
       </div>
 
       {/* Other Faculty */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 m-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
         {others.map((teacher, index) => renderFacultyCard(teacher, index))}
       </div>
     </section>
