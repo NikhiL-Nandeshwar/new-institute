@@ -14,21 +14,21 @@ Covers over 2500 problems monthly, with doubt resolution and personal mentoring.
   {
     title: 'NEET (2 Years Program)',
     icon: '/icons/NEET_LOGO.png',
-    description: `NEET students start with 4 months of math to strengthen their Physics and Chemistry base. The course includes 5 hours of Teaching along with doubt Solving and Objective and Subjective Testing — six days a week.
+    description: `NEET students start with 4 months of math to strengthen their Physics and Chemistry base. The course includes 5 hours of teaching along with doubt-solving and Objective and Subjective Testing — six days a week.
 
     Regular assignments, weekly tests ensure rigorous evaluation. Also features botanical field trips, lab slide preparation, and seminar presentations for holistic science learning.`,
   },
   {
     title: 'XI & XII Board Prep',
     icon: '/icons/mahalogo.png',
-    description: `Syllabus of XI & XII is aligned with JEE/NEET patterns to ensure dual preparation.Includes weekly and monthly tests modeled after the Board exam pattern.
+    description: `Syllabus of XI & XII is aligned with JEE/NEET patterns to ensure dual preparation. Includes weekly and monthly tests modeled after the board exam pattern.
 
-Features an exhaustive Preliminary Exam schedule and optimal Board preparation.College attendance is facilitated to one day per week as needed.`,
+Features an exhaustive preliminary exam schedule and optimal board preparation. College attendance is facilitated to one day per week as needed.`,
   },
   {
     title: 'Foundation (TFC-TACTICAL FOUNDATION COURSE)',
     icon: '/icons/foundation.png',
-    description: `A 10-month weekend program for students of Classes 9th and 10th. TFC aims to generate interest and build IIT JEE/NEET-oriented skills.
+    description: `A 10-month weekend program for students of classes 9th and 10th. TFC aims to generate interest and build IIT JEE/NEET-oriented skills.
 
 Includes 100+ hours of mentoring, hands-on science project work, testing, and alignment with school syllabus.
 Focuses on early conceptual clarity, measurement skills, and basic tool/gadget development.`,
