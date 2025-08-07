@@ -5,19 +5,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const streams = [
   {
-    title: 'IIT‑JEE (18‑Month Program)',
+    title: 'IIT‑JEE (2 Years Program)',
     icon: '/icons/IIT_JEE.png',
-    description: `An optimized productive course of 18 months with a schedule of minimum 5 hours of teaching and doubt-solving, plus 1 hour of daily testing under DOST (Daily Objective and Subjective Testing) — six days a week. Includes daily assignments, weekly tests of 180 marks, and an IIT Mains/Advanced-based Mega Test of 300 marks every month.
+    description: `An optimized productive course of 2 years with a schedule of minimum 5 hours of teaching along with doubt-solving and Objective and Subjective Testing — six days a week. Regular assignments & weekly tests ensure rigorous evaluation.
 
-Covers over 2500 problems monthly, with doubt resolution and personal mentoring.Topics are aligned with XII Board preparation for better dual readiness.`,
+Covers over 2500 problems monthly, with doubt resolution and personal mentoring. Topics are aligned with XII Board preparation for better dual readiness.`,
   },
   {
-    title: 'NEET (18‑Month Program)',
+    title: 'NEET (2 Years Program)',
     icon: '/icons/NEET_LOGO.png',
-    description: `NEET students start with 4 months of math to strengthen their Physics and Chemistry base.The 18-month course includes 5 hours of Teaching & Doubt-Solving and 1 hour of Testing daily under the DOST system — six days a week.
-Regular assignments, weekly tests of 180 marks, and a monthly Mega Test of 720 marks ensure rigorous evaluation.
+    description: `NEET students start with 4 months of math to strengthen their Physics and Chemistry base. The course includes 5 hours of Teaching along with doubt Solving and Objective and Subjective Testing — six days a week.
 
-Also features botanical field trips, lab slide preparation, and seminar presentations for holistic science learning.`,
+    Regular assignments, weekly tests ensure rigorous evaluation. Also features botanical field trips, lab slide preparation, and seminar presentations for holistic science learning.`,
   },
   {
     title: 'XI & XII Board Prep',
@@ -27,15 +26,14 @@ Also features botanical field trips, lab slide preparation, and seminar presenta
 Features an exhaustive Preliminary Exam schedule and optimal Board preparation.College attendance is facilitated to one day per week as needed.`,
   },
   {
-    title: 'Foundation (MSAP)',
+    title: 'Foundation (TFC-TACTICAL FOUNDATION COURSE)',
     icon: '/icons/foundation.png',
-    description: `A 10-month weekend program (Saturday & Sunday) for students of Classes VIII to XI.MSAP (Math and Science Augmentation Programme) aims to generate interest and build IIT JEE/NEET-oriented skills.
+    description: `A 10-month weekend program for students of Classes 9th and 10th. TFC aims to generate interest and build IIT JEE/NEET-oriented skills.
 
 Includes 100+ hours of mentoring, hands-on science project work, testing, and alignment with school syllabus.
 Focuses on early conceptual clarity, measurement skills, and basic tool/gadget development.`,
   },
 ];
-
 
 export default function Courses() {
   return (
@@ -49,7 +47,7 @@ export default function Courses() {
 
       <div className="space-y-8 max-w-5xl mx-auto">
         {streams.map((stream, i) => (
-           <Card
+          <Card
             key={i}
             className="hover:shadow-lg border-l-4 border-indigo-300 transition duration-300"
           >

@@ -40,10 +40,10 @@ const features = [
           The real test of teaching is verified in the consistent performance of the student in the tests.
         </p>
         <p>
-          At <strong>MOHIM</strong> we have highly scientific testing modules in the form of DOST – [Daily Objective and Subjective Testing], regular weekly long tests and a MEGA test which is a mock JEE / NEET examination at every month end.
+          At <strong>MOHIM</strong> we have highly scientific testing modules, regular weekly long tests along with theory board papers and a MEGA test which is a mock JEE / NEET examination at every month end.
         </p>
         <p>
-          The results of DOST are posted every day to the parents. The Testing Modules implemented create an environment of positive competitiveness and preparedness.
+          The Testing Modules implemented create an environment of positive competitiveness and preparedness.
         </p>
       </div>
     ),
@@ -95,7 +95,7 @@ export default function About() {
             <p className="flex items-start gap-4">
               <GraduationCap className="w-7 h-7 text-indigo-500 shrink-0 mt-1" />
               <span>
-                <strong className="text-yellow-500 font-semibold text-xl">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers—especially in Maths and Science. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
+                <strong className="text-yellow-500 font-semibold text-xl">MOHIM</strong> is a mission-driven institute committed to nurturing young minds for academic excellence and successful careers. Since 2017, MOHIM has mentored over 800 students, helping them secure admissions into IITs (Kharagpur, Indore, Madras), IISERs, VJTI, ICT Mumbai, AIIMS, and LTMC.
               </span>
             </p>
 
@@ -105,7 +105,7 @@ export default function About() {
             <p className="flex items-start gap-4">
               <LightbulbIcon className="w-7 h-7 text-indigo-500 shrink-0 mt-1" />
               <span>
-                Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing (DOST & Mega Tests), personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
+                Led by IIT alumni, MOHIM offers a robust academic environment with expert teaching, structured testing, personalized mentoring, and regular parent engagement. We prepare students for JEE (Advanced/Main), NEET, MHT-CET, BITSAT, and XII Boards—covering CS, IT, Geology, and English.
               </span>
             </p>
 
