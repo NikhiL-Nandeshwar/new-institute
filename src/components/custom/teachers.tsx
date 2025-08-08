@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const teachers = [
   {
-    name: "Dr. Abhijeet Patil",
+    name: "Mr. Abhijeet Patil",
     education: "BSc. Microbiology",
     location: "MEM",
     designation: "Founder & Director",

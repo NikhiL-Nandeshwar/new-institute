@@ -47,11 +47,11 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50 bg-stone-50 shadow">
       <div className="max-w-screen-xl mx-auto px-5 py-3 flex flex-wrap justify-between items-center gap-4">
         {/* Logo Section */}
-        <Link href="/" className="flex items-center space-x-1 text-indigo-500 min-w-[150px]">
+        <Link href="/" className="flex items-center space-x-1 text-indigo-900 min-w-[150px]">
           <Image src="/ml.png" alt="Logo" width={55} height={55} />
           <div className="flex flex-col leading-tight">
             <span className="text-xl font-bold">MOHIM</span>
-            <span className="text-xs text-indigo-400 font-semibold -mt-1">ACADEMY</span>
+            <span className="text-xs font-semibold -mt-1">ACADEMY</span>
           </div>
         </Link>
 

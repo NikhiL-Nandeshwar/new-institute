@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch("https://formspree.io/f/xeozrwbq", {
+    const res = await fetch("https://formspree.io/f/xeozpvpk", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -80,7 +80,7 @@ export default function Contact() {
           <Input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your Email Id"
             required
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
