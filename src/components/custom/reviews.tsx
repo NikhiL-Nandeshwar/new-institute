@@ -5,7 +5,7 @@ import { Quote } from 'lucide-react';
 const reviews = [
   {
     name: 'SOHAM GHEWARI',
-    details: 'B.Tech\n (Mechanical Engineering), IIT Indore.\nCurrently working at Danfoss',
+    details: 'B.Tech\n (Mechanical Engineering), IIT Indore\nCurrently working at Danfoss',
     feedback: `My journey with Mohim has been phenomenal.
 
 It not only helped me accomplish my aim but also helped me grow as a human being. Abhishek sir was always optimistic — he made learning fun. Raj sir gave me a flavor for real physics. 
@@ -22,7 +22,7 @@ Even if one student doesn’t understand a concept, they take separate sessions.
   },
   {
     name: 'GRISHMA MEHTA',
-    details: 'BS-MS\n IISER Pune.',
+    details: 'BS-MS\n IISER Pune',
     feedback: `I had an amazing experience at Mohim.
 
 Teachers focus intensely on conceptual clarity, helping not just in exams but also in coping with academic pressure.
@@ -37,7 +37,7 @@ Teachers are approachable and friendly. The modern facilities and thoughtful str
   },
   {
     name: 'MAYANK RAJESH SINHA',
-    details: 'B.Tech - M.Tech \n(Mechanical Engineering), IIT Kharagpur.\nCurrently working at Linde India Limited',
+    details: 'B.Tech - M.Tech \n(Mechanical Engineering), IIT Kharagpur\nCurrently working at Linde India Limited',
     feedback: `The past few years at Mohim were some of the most memorable. Teachers prioritized conceptual learning and helped me develop analytical thinking.
 
 Regular mock tests made me very comfortable with exam formats.
