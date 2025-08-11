@@ -5,11 +5,12 @@ import { Quote } from 'lucide-react';
 const reviews = [
   {
     name: 'SOHAM GHEWARI',
+    details: 'B.Tech\n (Mechanical Engineering), IIT Indore.\nCurrently working at Danfoss',
     feedback: `My journey with Mohim has been phenomenal.
 
-     It not only helped me accomplish my aim but also helped me grow as a human being. Abhishek sir was always optimistic — he made learning fun. Raj sir gave me a flavor for real physics. 
+It not only helped me accomplish my aim but also helped me grow as a human being. Abhishek sir was always optimistic — he made learning fun. Raj sir gave me a flavor for real physics. 
 
-     Sandeep sir and Onkar sir supported us managing testing schedules, assignments, and lectures. Perseverance, planning, and the team made all the difference.`,
+Sandeep sir and Onkar sir supported us managing testing schedules, assignments, and lectures. Perseverance, planning, and the team made all the difference.`,
   },
   {
     name: 'POOJA PANJWANI',
@@ -21,6 +22,7 @@ Even if one student doesn’t understand a concept, they take separate sessions.
   },
   {
     name: 'GRISHMA MEHTA',
+    details: 'BS-MS\n IISER Pune.',
     feedback: `I had an amazing experience at Mohim.
 
 Teachers focus intensely on conceptual clarity, helping not just in exams but also in coping with academic pressure.
@@ -35,6 +37,7 @@ Teachers are approachable and friendly. The modern facilities and thoughtful str
   },
   {
     name: 'MAYANK RAJESH SINHA',
+    details: 'B.Tech - M.Tech \n(Mechanical Engineering), IIT Kharagpur.\nCurrently working at Linde India Limited',
     feedback: `The past few years at Mohim were some of the most memorable. Teachers prioritized conceptual learning and helped me develop analytical thinking.
 
 Regular mock tests made me very comfortable with exam formats.
@@ -43,11 +46,11 @@ The supportive faculty and culture helped me stay motivated, even during the pan
   },
   {
     name: 'VAISHNAVI SHRESHTHI',
-    feedback: `I had a great journey preparing for 11th and 12th with Mohim Academy.Teachers are intelligent and possess excellent teaching skills, focusing on conceptual clarity and stress handling.
+    feedback: `I had a great journey preparing for 11th and 12th with Mohim Academy. Teachers are intelligent and possess excellent teaching skills, focusing on conceptual clarity and stress handling.
 
 Doubt-solving sessions were key to analyzing mistakes.
 
-Cracking IIT‑JEE felt like a dream; thanks to Mohim’s guidance and support in exams like JEE, BITSAT, and CET.`,
+Cracking IIT-JEE felt like a dream; thanks to Mohim’s guidance and support in exams like JEE, BITSAT, and CET.`,
   },
 ];
 
@@ -71,7 +74,12 @@ export default function Reviews() {
             <div className="text-gray-700 text-base leading-relaxed mt-2 italic whitespace-pre-line">
               “{review.feedback}”
             </div>
-            <p className="text-right mt-4 font-semibold text-yellow-600">— {review.name}</p>
+            <div className="mt-4 text-right">
+              <p className="font-semibold text-yellow-600">— {review.name}</p>
+              {review.details && (
+                <p className="text-sm text-gray-500 whitespace-pre-line leading-snug">{review.details}</p>
+              )}
+            </div>
           </div>
         ))}
       </div>
