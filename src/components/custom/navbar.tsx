@@ -26,6 +26,8 @@ export default function Navbar() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
+            window.history.replaceState(null, "", `#${entry.target.id}`);
+            // window.history.replaceState(null, "", window.location.pathname);
           }
         });
       },
