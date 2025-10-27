@@ -11,16 +11,15 @@ const WhatsAppBubble = () => {
   const message = "Hello, I want to enquire about the admissions.";
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-  // For mobile tap tooltip behavior
   const handleClick = () => {
     setShowTooltip(true);
     setTimeout(() => setShowTooltip(false), 2000);
   };
 
   return (
-    <div className="fixed bottom-5 right-5 flex items-center gap-2 z-50">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center">
       {showTooltip && (
-        <div className="px-3 py-1 bg-gray-500 text-white text-sm rounded-full shadow-lg animate-fade-in">
+        <div className="mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-full shadow-lg animate-fade-in">
           Enquire about Admission
         </div>
       )}
@@ -31,9 +30,17 @@ const WhatsAppBubble = () => {
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         onClick={handleClick}
-        className="bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-200"
+        className="
+          bg-green-500 text-white
+          w-10 h-10
+          md:w-14 md:h-14
+          flex items-center justify-center
+          rounded-full shadow-lg
+          hover:scale-110 transition-transform duration-200
+        "
       >
-        <FaWhatsapp size={30} />
+        {/* Mobile icon smaller, Desktop icon bigger */}
+        <FaWhatsapp className="text-[26px] md:text-[32px]" />
       </Link>
     </div>
   );
