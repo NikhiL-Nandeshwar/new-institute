@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/custom/navbar";
 import Footer from "@/components/custom/footer";
 import { Toaster } from "@/components/ui/sonner";
+import WhatsAppBubble from "@/components/custom/whatsAppBubble";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <Navbar />
                 <Toaster richColors position="top-right" />
                 {children}
+                <WhatsAppBubble />
                 <Footer />
             </body>
         </html>
