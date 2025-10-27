@@ -17,7 +17,7 @@ const WhatsAppBubble = () => {
   };
 
   return (
-<div className="fixed bottom-5 right-3 md:right-[-2.5rem] z-50 flex flex-col items-center group">
+<div className="fixed bottom-5 right-3 z-50 flex flex-col items-center group">
       {/* Tooltip container: invisible on desktop until hover, hidden only on mobile */}
       <div
         className={`
@@ -25,7 +25,7 @@ const WhatsAppBubble = () => {
           ${showTooltip ? "block" : "hidden md:block md:invisible md:group-hover:visible"}
         `}
       >
-        Enquire about Admission
+        Enquire About Admission
       </div>
 
       <Link
