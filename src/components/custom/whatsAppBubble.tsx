@@ -32,7 +32,7 @@ const WhatsAppBubble = () => {
         onClick={handleClick}
         className="
           bg-green-500 text-white
-          w-10 h-10
+          w-12 h-12
           md:w-14 md:h-14
           flex items-center justify-center
           rounded-full shadow-lg
@@ -40,7 +40,7 @@ const WhatsAppBubble = () => {
         "
       >
         {/* Mobile icon smaller, Desktop icon bigger */}
-        <FaWhatsapp className="text-[26px] md:text-[32px]" />
+        <FaWhatsapp className="text-[28px] md:text-[32px]" />
       </Link>
     </div>
   );
