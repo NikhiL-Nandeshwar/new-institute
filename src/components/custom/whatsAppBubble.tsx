@@ -17,30 +17,31 @@ const WhatsAppBubble = () => {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center">
-      {showTooltip && (
-        <div className="mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-full shadow-lg animate-fade-in">
-          Enquire about Admission
-        </div>
-      )}
+    <div className="fixed bottom-5 right-3 z-50 flex flex-col items-center group">
+      {/* Tooltip container: invisible on desktop until hover, hidden only on mobile */}
+      <div
+        className={`
+          mb-2 px-3 py-1 bg-gray-600 text-white text-sm rounded-full shadow-lg animate-fade-in
+          ${showTooltip ? "block" : "hidden md:block md:invisible md:group-hover:visible"}
+        `}
+      >
+        Enquire about Admission
+      </div>
 
       <Link
         href={waLink}
         target="_blank"
-        onMouseEnter={() => setShowTooltip(true)}
-        onMouseLeave={() => setShowTooltip(false)}
         onClick={handleClick}
         className="
           bg-green-500 text-white
           w-12 h-12
-          md:w-14 md:h-14
+          md:w-13 md:h-13
           flex items-center justify-center
           rounded-full shadow-lg
           hover:scale-110 transition-transform duration-200
         "
       >
-        {/* Mobile icon smaller, Desktop icon bigger */}
-        <FaWhatsapp className="text-[28px] md:text-[32px]" />
+        <FaWhatsapp className="text-[28px] md:text-[31px]" />
       </Link>
     </div>
   );
