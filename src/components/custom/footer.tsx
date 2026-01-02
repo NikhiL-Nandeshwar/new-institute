@@ -10,7 +10,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="underline hover:text-primary"
         >
-          NexSpire Technologies
+          Nexspire Technologies
         </a>
       </div>
     </div>
