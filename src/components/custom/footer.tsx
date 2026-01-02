@@ -5,7 +5,7 @@ const Footer = () => {
       <div>
         Managed by{" "}
         <a
-          href="https://nexspire.vercel.app"
+          href="https://nexspiretechnologies.in"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-primary"
